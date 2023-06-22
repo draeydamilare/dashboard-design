@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background: #080710;
+      }
+      .background {
+        width: 430px;
+        height: 480px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        right: 50%;
+      }
+      .background .shape {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        border-radius: 50%;
+      }
+      .shape:first-child {
+        background: linear-gradient(#1845ad, #23a2f6);
+        left: -110px;
+        bottom: -540px;
+      }
+      .shape:last-child {
+        background: linear-gradient(to right, #ff512f, #f09819);
+        right: -110px;
+        bottom: 70px;
+      }
+      form {
+        height: 520px;
+        width: 400px;
+        background-color: rgba(255, 255, 255, 0.13);
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+        padding: 50px 35px;
+      }
+      form * {
+        font-family: "poppins", sans-serif;
+        color: #fff;
+        letter-spacing: 0.5px;
+        outline: none;
+        border: none;
+        list-style: none;
+        text-decoration: none;
+      }
+      form h3 {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 42px;
+        text-align: center;
+      }
+      label {
+        display: block;
+        margin-top: 30px;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      input {
+        display: block;
+        height: 50px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 3px;
+        padding: 0 10px;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 300;
+      }
+      ::placeholder {
+        color: #e5e5e5;
+      }
+      button {
+        margin-top: 50px;
+        width: 100%;
+        background-color: #fff;
+        color: #080710;
+        padding: 15px 0;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+      a {
+        color: #000;
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .socials {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .socials div {
+        background: red;
+        width: 150px;
+        border-radius: 3px;
+        padding: 5px 10px 10px 5px;
+        background-color: rgba(255, 255, 255, 0.27);
+        color: #eaf0fb;
+        text-align: center;
+      }
+      .socials div:hover {
+        background: rgba(255, 255, 255, 0.47);
+      }
+      .socials .fb {
+        margin-left: 25px;
+      }
+      .socials a {
+        margin-right: 4px;
+      }
+      .socials .go {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .socials img {
+        padding-right: 10px;
+        height: 23px;
+        width: 26px;
+      }
+    </style>
+
+    <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+
+    <form action="">
+      <h3>Login</h3>
+      <label for="username">Username</label>
+      <input type="text" placeholder="Email or Phone" id="username" />
+
+      <label for="password">Password</label>
+      <input type="password" placeholder="Password" id="password" />
+
+      <button type="submit"><a href="index.html">Login With</a></button>
+
+      <div class="socials">
+        <div class="go">
+          <a href="">
+            <img src="google.png" alt="" />
+            Google
+          </a>
+        </div>
+        <div class="fb">
+          <a href="">
+            <img src="facebook.png" alt="" />
+            Facebook
+          </a>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
